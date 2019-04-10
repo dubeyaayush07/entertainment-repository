@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card-image  {
+    margin-bottom: 0.6em; 
+}
+
+.card-image > img {
+    border-radius: 2%;
+    border: 0.1em solid black;
+}
+

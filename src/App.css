@@ -1,16 +1,13 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
+  text-align: center;
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,15 +16,63 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.select-btns {
+   margin: 2em 0em;
+   display: flex;
+   justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-btn {
+  margin: 0em 1em;
+  padding: 0.8em;
+  text-decoration: none;
+  background: none;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  border: 0.12em solid rgb(2, 12, 26);
+  color: rgb(2, 2, 2);
+  background: #7decd0;
+  font-weight: bold;
+  
 }
+
+.select-btn:focus {
+  outline: 0;
+  background: #5fceb2;
+}
+
+.cards {
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em 2em;
+}
+
+.search-form {
+  margin: 2em 0em 0em 0em;
+  display: flex;
+  justify-content: center;
+}
+
+
+input[type=text] {
+  border-radius: 0.3em;
+  border: 0.12em solid rgb(2, 12, 26);
+  width: 30em;
+  padding: 0.6em 0.5em;
+}
+
+.submit-btn {
+  margin: 0em 1em;
+  padding: 0.8em;
+  text-decoration: none;
+  background: none;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  border: 0.12em solid rgb(2, 12, 26);
+  font-weight: 500;
+}
+
